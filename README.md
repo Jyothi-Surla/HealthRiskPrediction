@@ -1,10 +1,10 @@
-# 🩺 Health Risk Prediction with Explainable ML (SHAP)
+#  Health Risk Prediction with Explainable ML (SHAP)
 
 This project builds a machine learning model to predict heart disease risk from patient clinical data. It also uses **SHAP (SHapley Additive Explanations)** to explain model predictions, promoting interpretability and trust in healthcare AI.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 HealthRiskPrediction/ ├── heart.csv # Dataset 
 ├── step1_explore_data.py # Basic data overview 
@@ -42,11 +42,13 @@ HealthRiskPrediction/ ├── heart.csv # Dataset
 
 ## SHAP Summary Plot
 
-> SHAP beeswarm plot shows which features impact the model's predictions, and by how much.
-
-![SHAP Plot](shap_plot_example.png)  
-<sub>Red = high feature value, Blue = low value</sub>
-
+> SHAP beeswarm plot shows which features impact the model's predictions and by how much.
+*Red = High feature value
+Blue = Low feature value
+*Purple/Pink = Medium or in-between values
+->The farther a dot is from 0 (left or right), the more impact that feature had on the prediction.
+->Dots to the right push the model toward predicting "disease (1)", and to the left toward "no disease (0)".
+  
 ---
 
 ## Technologies Used
@@ -61,8 +63,7 @@ HealthRiskPrediction/ ├── heart.csv # Dataset
 ---
 
 ## Author
-
-Jyothi Surla — built as a learning + portfolio project for interpretable machine learning in healthcare.
+Jyothi Surla
 
 ---
 
